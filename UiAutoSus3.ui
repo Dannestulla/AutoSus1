@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="ttk.Frame" id="Frame_1">
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+    </layout>
+    <child>
+      <object class="tk.Text" id="Text_1">
+        <property name="exportselection">true</property>
+        <property name="height">10</property>
+        <property name="setgrid">false</property>
+        <property name="state">normal</property>
+        <property name="tabstyle">tabular</property>
+        <property name="takefocus">true</property>
+        <property name="width">20</property>
+        <property name="wrap">word</property>
+        <bind add="True" handler="callback" sequence="texto1" />
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Text" id="Text_2">
+        <property name="height">10</property>
+        <property name="state">normal</property>
+        <property name="width">20</property>
+        <bind add="True" handler="callback" sequence="texto2" />
+        <layout>
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="Label_1">
+        <property name="justify">center</property>
+        <property name="text" translatable="yes">Médicos e Enfermeiros:
+(Produção)</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="Label_2">
+        <property name="cursor">arrow</property>
+        <property name="justify">center</property>
+        <property name="relief">flat</property>
+        <property name="text" translatable="yes">Agentes Comunitários:
+(cidadãos ativos)</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="Label_3">
+        <property name="compound">top</property>
+        <property name="justify">center</property>
+        <property name="text" translatable="yes">Os números devem ser espaçados por um espaço normal 
+  ou em linhas diferentes.</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="columnspan">2</property>
+          <property name="propagate">True</property>
+          <property name="row">3</property>
+          <property name="rowspan">1</property>
+          <property name="sticky">w</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="Button_1">
+        <property name="command">botao_click</property>
+        <property name="text" translatable="yes">Pesquisar</property>
+        <property name="width">20</property>
+        <bind add="" handler="callback" sequence="&lt;1&gt;" />
+        <layout>
+          <property name="column">0</property>
+          <property name="columnspan">8</property>
+          <property name="propagate">True</property>
+          <property name="row">11</property>
+          <property name="rowspan">2</property>
+          <property name="sticky">s</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="Label_0">
+        <property name="anchor">center</property>
+        <property name="font">TkMenuFont</property>
+        <property name="justify">left</property>
+        <property name="text" translatable="yes">AutoSus V1</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="columnspan">6</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Combobox" id="Combobox_1">
+        <property name="exportselection">true</property>
+        <property name="height">3</property>
+        <property name="state">normal</property>
+        <property name="validate">focus</property>
+        <property name="values">http://esus.alvorada.rs.gov.br:8080/esus/#/pec http://10.70.70.23:8080/esus</property>
+        <property name="width">40</property>
+        <bind add="True" handler="callback" sequence="&lt;1&gt;" />
+        <layout>
+          <property name="columnspan">5</property>
+          <property name="propagate">True</property>
+          <property name="row">7</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
